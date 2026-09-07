@@ -1,0 +1,28 @@
+::ffff:127.0.0.1 - - [30/Sep/2025 09:12:12] "GET / HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [30/Sep/2025 09:14:15] "GET / HTTP/1.1" 200 -
+::1 - - [30/Sep/2025 09:17:23] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:17:23] "GET /js/pages/userLogin.js HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:17:23] "GET /js/pages/home.js HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:17:23] "GET /js/pages/adminLogin.js HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:17:23] code 404, message File not found
+::1 - - [30/Sep/2025 09:17:23] "GET /favicon.ico HTTP/1.1" 404 -
+::ffff:127.0.0.1 - - [30/Sep/2025 09:19:57] "GET / HTTP/1.1" 200 -
+::1 - - [30/Sep/2025 09:20:15] code 404, message File not found
+::1 - - [30/Sep/2025 09:20:15] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [30/Sep/2025 09:51:49] "GET / HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:51:49] "GET /logo.jpeg HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:51:49] "GET /styles.css HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:51:49] "GET /js/app.js HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:51:49] "GET /js/router.js HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:51:49] "GET /js/pages/welcome.js HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:51:49] "GET /js/pages/home.js HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:51:49] "GET /js/pages/userLogin.js HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:51:49] "GET /js/pages/adminLogin.js HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:51:49] "GET /js/utils/ui.js HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:51:49] "GET /js/data/mock.js HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:51:49] "GET /js/pages/dashboard.js HTTP/1.1" 200 -
+::1 - - [30/Sep/2025 09:51:49] "GET /js/pages/ticketing.js HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:51:49] "GET /js/pages/tracking.js HTTP/1.1" 304 -
+::1 - - [30/Sep/2025 09:51:49] "GET /js/services/api.js HTTP/1.1" 200 -
+::1 - - [30/Sep/2025 09:51:49] code 404, message File not found
+::1 - - [30/Sep/2025 09:51:49] "GET /favicon.ico HTTP/1.1" 404 -

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Test - City Linkers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .field {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #4F46E5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #4338CA;
+        }
+        .message {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .success {
+            background: #D1FAE5;
+            color: #065F46;
+        }
+        .error {
+            background: #FEE2E2;
+            color: #991B1B;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔐 Login Test</h1>
+    <p>Test login without modules</p>
+    
+    <div class="field">
+        <label for="email">Email</label>
+        <input type="text" id="email" value="john@example.com">
+    </div>
+    
+    <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" value="password123">
+    </div>
+    
+    <button onclick="testLogin()">Test Login</button>
+    
+    <div id="message"></div>
+    
+    <script>
+        const users = {
+            'john@example.com': { name: 'John Doe', role: 'user', password: 'password123' },
+            'admin@citylinkers.com': { name: 'Admin User', role: 'admin', password: 'admin123' }
+        };
+        
+        function testLogin() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const messageDiv = document.getElementById('message');
+            
+            const user = users[email];
+            
+            if (!user) {
+                messageDiv.className = 'message error';
+                messageDiv.textContent = '❌ User not found';
+                return;
+            }
+            
+            if (user.password !== password) {
+                messageDiv.className = 'message error';
+                messageDiv.textContent = '❌ Incorrect password';
+                return;
+            }
+            
+            // Save to session
+            sessionStorage.setItem('user', JSON.stringify({
+                name: user.name,
+                role: user.role,
+                identifier: email
+            }));
+            
+            messageDiv.className = 'message success';
+            messageDiv.innerHTML = `✅ Login successful!<br>Welcome ${user.name}<br><br><a href="index.html#/home">Go to Home</a>`;
+        }
+    </script>
+</body>
+</html>
