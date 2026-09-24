@@ -1,4 +1,6 @@
-# City Linkers - Smart Transit System
+# City Linkers - Smart Transit System 
+A GPS and Blockchain enabled Smart Bus Tracking system.
+
 
 A complete modern transit system with **real-time GPS tracking**, **blockchain e-ticketing**, **PostgreSQL database**, and **separate frontend/backend servers**.
 
